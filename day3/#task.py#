@@ -1,0 +1,9 @@
+from numpy import prod
+slope = ["".join([line.strip()]*75) for line in open("input")]
+print([prod([sum([slope[y][x * xs]  == '#' for x,y in enumerate(range(0, len(slope), ys))])
+             for ys, xl in enumerate(l)
+             for xs in xl])
+       for l in [[[], [3]], [[], [1,3,5,7], [1]]]])
+
+
+        
